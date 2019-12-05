@@ -36,6 +36,3 @@ window.onresize = function () {
     window.commentsY = document.getElementById("comments").getBoundingClientRect().y;
     window.socialY = document.getElementById("social").getBoundingClientRect().y;    
 }
-
-console.log(window.innerWidth)
-console.log(window.innerHeight)
