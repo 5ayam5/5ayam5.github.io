@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
 }
 
 #navbar {
@@ -12,6 +15,7 @@ html, body {
     overflow: hidden;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .navbarhome {
@@ -65,15 +69,25 @@ html, body {
     margin: 0.01%;
 }
 
+#background {
+    height: 100vh;
+    z-index: -1;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+}
+
 #home {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    justify-content: right;
     text-align: center;
     margin: 0;
     padding: 1%;
-    background-image: url(background.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     color: #ffffff;
+    transform: translateZ(-1px) scale(2);
 }
 
 #name {
@@ -87,12 +101,15 @@ html, body {
 }
 
 #about {
-    padding: 7% 2% 7% 2%;
+    padding: 7vh 2vw 7vh 2vw;
     text-align: justify;
     font-size: 150%;
 }
 
 #contents {
+    width: 100vw;
+    position: absolute;
+    top: 83vh;
     background-color: #e7e7e7;
     border-style: solid;
     border-width: 1px;
@@ -100,6 +117,8 @@ html, body {
     margin: 0;
     padding: 1%;
     color: #333333;
+    box-shadow: 0px -6px 15px 5px #000000;
+    transform: translateZ(0px) scale(1);
 }
 
 .content {
@@ -119,8 +138,8 @@ html, body {
 
 #up {
     position: sticky;
-    bottom: 1%;
-    width: 3%;
+    bottom: 1vh;
+    width: 3vw;
     mix-blend-mode: multiply;
 }
 
