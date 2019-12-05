@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>My Webpage</title>
     <link rel="stylesheet" href="styling.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -10,12 +11,12 @@
 
 <body>
     <ul id="navbar">
-        <li class="navbarhome"><a href="#home">Home</a></li>
-        <li class="navbarelement"><a href="#div1">Div 1</a></li>
-        <li class="navbarelement"><a href="#div2">Div 2</a></li>
-        <li class="navbarelement"><a href="#div3">Div 3</a></li>
-        <li class="navbarelement" style="float: right;"><a href="">Social</a></li>
-        <li class="navbarelement" style="float: right;"><a href="">Comments</a></li>
+        <li class="navbarhome">Home</li>
+        <li class="navbarelement" id="ref_div1">Div 1</li>
+        <li class="navbarelement" id="ref_div2">Div 2</li>
+        <li class="navbarelement" id="ref_div3">Div 3</li>
+        <li class="navbarelement" id="ref_social" style="float: right;">Social</li>
+        <li class="navbarelement" id="ref_comments" style="float: right;">Comments</li>
     </ul>
     <div id="background"><img src="background.jpeg"></div>
     <div id="home">
@@ -38,10 +39,14 @@
         </div>
         <div id="comments">
             <h1 class="h1">Comments</h1>
-            <textarea id="comments">Leave your comments</textarea>
+            <textarea id="comments" placeholder="Leave your comments"></textarea>
+        </div>
+        <div id="social">
+            <h1 class="h1">Social</h1>
+            <div id="handles"></div>
         </div>
     </div>
-    <a href="#home"><img src="up.png" id="up"></a>
+    <img src="up.png" id="up">
 </body>
 
 </html>
