@@ -59,10 +59,10 @@
     }
     #up {
         position: sticky;
-        bottom: 1vh;
+        left: 1vw;
+        bottom: 2vh;
         max-width: 40px;
         margin: 0;
-        mix-blend-mode: multiply;
         z-index: 100;
     }
 }
@@ -104,9 +104,9 @@
     }
     #up {
         position: fixed;
-        bottom: 1%;
+        left: 1vw;
+        bottom: 2vh;
         max-width: 40px;
-        mix-blend-mode: multiply;
     }
 }
 
@@ -199,6 +199,5 @@
 }
 
 #up:hover {
-    mix-blend-mode: luminosity;
+    mix-blend-mode: color-burn;
 }
-

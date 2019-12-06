@@ -27,6 +27,32 @@ window.onload = function () {
     document.getElementById("navbarhome").addEventListener("click", function () {
         $root.scrollTop(0)
     });
+    var comment = document.getElementById("comment");
+    var alert = document.getElementById("alert");
+    comment.onfocus = function () {
+        alert.style.color = "#ff3333";
+        alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";
+    };
+    comment.onkeypress = function () {
+        alert.style.color = "#ff3333";
+        alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";        
+    }
+    comment.onblur = function () {
+        alert.innerText = "";
+    };
+    $(comment).on("keypress", function (event) {
+        if (event.keyCode === 13) {
+            var input = $(comment).val();
+            if (input) {
+                alert.style.color = "#33aa33";
+                alert.innerText = input + "\nSubmitted!";
+            }
+            else {
+                alert.style.color = "#ff3333";
+                alert.innerText = "Looks like you haven't written anything! Do write something and then press enter."
+            }
+        }
+    });
 };
 
 window.onresize = function () {
