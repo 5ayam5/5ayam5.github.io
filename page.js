@@ -24,7 +24,7 @@ window.onload = function () {
     document.getElementById("up").addEventListener("click", function () {
         $root.scrollTop(0)
     });
-    document.getElementsByClassName("navbarhome")[0].addEventListener("click", function () {
+    document.getElementById("navbarhome").addEventListener("click", function () {
         $root.scrollTop(0)
     });
 };
