@@ -45,19 +45,19 @@ window.onload = function () {
         div1.style.backgroundColor = navbar.style.backgroundColor;
         home.style.backgroundColor = "#cccccc";
 
-        if (window.socialY - offset <= 0) {
+        if (window.socialY - offset <= 1) {
             social.style.backgroundColor = "#227722";
         }
-        else if (window.commentsY - offset <= 0) {
+        else if (window.commentsY - offset <= 1) {
             comments.style.backgroundColor = "#227722";
         }
-        else if (window.div3Y - offset <= 0) {
+        else if (window.div3Y - offset <= 1) {
             div3.style.backgroundColor = "#227722";
         }
-        else if (window.div2Y - offset <= 0) {
+        else if (window.div2Y - offset <= 1) {
             div2.style.backgroundColor = "#227722";
         }
-        else if (window.div1Y - offset <= 0) {
+        else if (window.div1Y - offset <= 1) {
             div1.style.backgroundColor = "#227722";
         }
         else {
