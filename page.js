@@ -27,6 +27,44 @@ window.onload = function () {
     document.getElementById("navbarhome").addEventListener("click", function () {
         $root.scrollTop(0)
     });
+
+    document.getElementsByTagName("body")[0].addEventListener("scroll", function () {
+        var offset = $(document.getElementById("navbar")).offset().top;
+        var social = document.getElementById("ref_social");
+        var comments = document.getElementById("ref_comments");
+        var div3 = document.getElementById("ref_div3");
+        var div2 = document.getElementById("ref_div2");
+        var div1 = document.getElementById("ref_div1");
+        var home = document.getElementById("navbarhome");
+        var navbar = document.getElementById("navbar");
+
+        social.style.backgroundColor = navbar.style.backgroundColor;
+        comments.style.backgroundColor = navbar.style.backgroundColor;
+        div3.style.backgroundColor = navbar.style.backgroundColor;
+        div2.style.backgroundColor = navbar.style.backgroundColor;
+        div1.style.backgroundColor = navbar.style.backgroundColor;
+        home.style.backgroundColor = "#cccccc";
+
+        if (window.socialY - offset <= 0) {
+            social.style.backgroundColor = "#227722";
+        }
+        else if (window.commentsY - offset <= 0) {
+            comments.style.backgroundColor = "#227722";
+        }
+        else if (window.div3Y - offset <= 0) {
+            div3.style.backgroundColor = "#227722";
+        }
+        else if (window.div2Y - offset <= 0) {
+            div2.style.backgroundColor = "#227722";
+        }
+        else if (window.div1Y - offset <= 0) {
+            div1.style.backgroundColor = "#227722";
+        }
+        else {
+            home.style.backgroundColor = "#cceecc";
+        }
+    });
+
     var comment = document.getElementById("comment");
     var alert = document.getElementById("alert");
     comment.onfocus = function () {
