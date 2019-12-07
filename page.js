@@ -10,7 +10,6 @@ window.onload = function () {
     window.commentsY = document.getElementById("comments").getBoundingClientRect().y;
     window.socialY = document.getElementById("social").getBoundingClientRect().y;
 
-    window.offset = $(document.getElementById("navbar")).offset().top;
     window.social = document.getElementById("ref_social");
     window.comments = document.getElementById("ref_comments");
     window.div3 = document.getElementById("ref_div3");
@@ -42,6 +41,8 @@ window.onload = function () {
     });
 
     document.getElementsByTagName("body")[0].addEventListener("scroll", function () {
+        window.offset = $(document.getElementById("navbar")).offset().top;
+        
         window.social.style.backgroundColor = window.navbar.style.backgroundColor;
         window.comments.style.backgroundColor = window.navbar.style.backgroundColor;
         window.div3.style.backgroundColor = window.navbar.style.backgroundColor;
