@@ -3,6 +3,7 @@ window.onload = function () {
 
     var comment = document.getElementById("comment");
     var alert = document.getElementById("alert");
+    window.input = "";
 
     window.div1Y = document.getElementById("div1").getBoundingClientRect().y;
     window.div2Y = document.getElementById("div2").getBoundingClientRect().y;
@@ -42,7 +43,7 @@ window.onload = function () {
 
     document.getElementsByTagName("body")[0].addEventListener("scroll", function () {
         window.offset = $(document.getElementById("navbar")).offset().top;
-        
+
         window.social.style.backgroundColor = window.navbar.style.backgroundColor;
         window.comments.style.backgroundColor = window.navbar.style.backgroundColor;
         window.div3.style.backgroundColor = window.navbar.style.backgroundColor;
@@ -50,19 +51,19 @@ window.onload = function () {
         window.div1.style.backgroundColor = window.navbar.style.backgroundColor;
         window.home.style.backgroundColor = "#cccccc";
 
-        if (window.socialY - window.offset <= 1) {
+        if (window.socialY - window.offset <= 16) {
             window.social.style.backgroundColor = "#227722";
         }
-        else if (window.commentsY - window.offset <= 1) {
+        else if (window.commentsY - window.offset <= 16) {
             window.comments.style.backgroundColor = "#227722";
         }
-        else if (window.div3Y - window.offset <= 1) {
+        else if (window.div3Y - window.offset <= 16) {
             window.div3.style.backgroundColor = "#227722";
         }
-        else if (window.div2Y - window.offset <= 1) {
+        else if (window.div2Y - window.offset <= 16) {
             window.div2.style.backgroundColor = "#227722";
         }
-        else if (window.div1Y - window.offset <= 1) {
+        else if (window.div1Y - window.offset <= 16) {
             window.div1.style.backgroundColor = "#227722";
         }
         else {
@@ -71,29 +72,41 @@ window.onload = function () {
     });
 
     comment.onfocus = function () {
-        alert.style.color = "#ff3333";
-        alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";
+        if (!window.input) {
+            alert.style.color = "#aa3333";
+            alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";
+        }
+        else {
+            alert.style.color = "#33aa33";
+            alert.innerText = window.input;
+        }
     };
-    comment.onkeypress = function () {
-        alert.style.color = "#ff3333";
-        alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";
-    }
     comment.onblur = function () {
-        alert.innerText = "";
+        if (!window.input) {
+            alert.innerText = "";
+        }
     };
     $(comment).on("keypress", function (event) {
         if (event.keyCode === 13) {
             var input = $(comment).val();
             if (input) {
+                var dateAndTime = new Date();
+                window.input = dateAndTime.getDate() + "/" + dateAndTime.getMonth() + "/" + dateAndTime.getFullYear() + " " + dateAndTime.getHours() + ":" + dateAndTime.getMinutes() + ":" + dateAndTime.getSeconds() + " - " + input + "\n" + window.input;
                 alert.style.color = "#33aa33";
-                alert.innerText = input + "\nSubmitted!";
+                alert.innerText = window.input;
                 $(comment).val("");
             }
-            else {
-                alert.style.color = "#ff3333";
-                alert.innerText = "Looks like you haven't written anything! Do write something and then press enter."
-            }
         }
+    });
+
+    $(document.getElementById("facebook")).on("click", function () {
+        window.open("https://www.facebook.com")
+    });
+    $(document.getElementById("instagram")).on("click", function () {
+        window.open("https://www.instagram.com")
+    });
+    $(document.getElementById("twitter")).on("click", function () {
+        window.open("https://www.twitter.com")
     });
 };
 
