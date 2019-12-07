@@ -1,10 +1,23 @@
 window.onload = function () {
     var $root = $("html, body");
+
+    var comment = document.getElementById("comment");
+    var alert = document.getElementById("alert");
+
     window.div1Y = document.getElementById("div1").getBoundingClientRect().y;
     window.div2Y = document.getElementById("div2").getBoundingClientRect().y;
     window.div3Y = document.getElementById("div3").getBoundingClientRect().y;
     window.commentsY = document.getElementById("comments").getBoundingClientRect().y;
     window.socialY = document.getElementById("social").getBoundingClientRect().y;
+
+    window.offset = $(document.getElementById("navbar")).offset().top;
+    window.social = document.getElementById("ref_social");
+    window.comments = document.getElementById("ref_comments");
+    window.div3 = document.getElementById("ref_div3");
+    window.div2 = document.getElementById("ref_div2");
+    window.div1 = document.getElementById("ref_div1");
+    window.home = document.getElementById("navbarhome");
+    window.navbar = document.getElementById("navbar");
 
     document.getElementById("ref_div1").addEventListener("click", function () {
         $root.scrollTop(window.div1Y)
@@ -29,51 +42,40 @@ window.onload = function () {
     });
 
     document.getElementsByTagName("body")[0].addEventListener("scroll", function () {
-        var offset = $(document.getElementById("navbar")).offset().top;
-        var social = document.getElementById("ref_social");
-        var comments = document.getElementById("ref_comments");
-        var div3 = document.getElementById("ref_div3");
-        var div2 = document.getElementById("ref_div2");
-        var div1 = document.getElementById("ref_div1");
-        var home = document.getElementById("navbarhome");
-        var navbar = document.getElementById("navbar");
+        window.social.style.backgroundColor = window.navbar.style.backgroundColor;
+        window.comments.style.backgroundColor = window.navbar.style.backgroundColor;
+        window.div3.style.backgroundColor = window.navbar.style.backgroundColor;
+        window.div2.style.backgroundColor = window.navbar.style.backgroundColor;
+        window.div1.style.backgroundColor = window.navbar.style.backgroundColor;
+        window.home.style.backgroundColor = "#cccccc";
 
-        social.style.backgroundColor = navbar.style.backgroundColor;
-        comments.style.backgroundColor = navbar.style.backgroundColor;
-        div3.style.backgroundColor = navbar.style.backgroundColor;
-        div2.style.backgroundColor = navbar.style.backgroundColor;
-        div1.style.backgroundColor = navbar.style.backgroundColor;
-        home.style.backgroundColor = "#cccccc";
-
-        if (window.socialY - offset <= 1) {
-            social.style.backgroundColor = "#227722";
+        if (window.socialY - window.offset <= 1) {
+            window.social.style.backgroundColor = "#227722";
         }
-        else if (window.commentsY - offset <= 1) {
-            comments.style.backgroundColor = "#227722";
+        else if (window.commentsY - window.offset <= 1) {
+            window.comments.style.backgroundColor = "#227722";
         }
-        else if (window.div3Y - offset <= 1) {
-            div3.style.backgroundColor = "#227722";
+        else if (window.div3Y - window.offset <= 1) {
+            window.div3.style.backgroundColor = "#227722";
         }
-        else if (window.div2Y - offset <= 1) {
-            div2.style.backgroundColor = "#227722";
+        else if (window.div2Y - window.offset <= 1) {
+            window.div2.style.backgroundColor = "#227722";
         }
-        else if (window.div1Y - offset <= 1) {
-            div1.style.backgroundColor = "#227722";
+        else if (window.div1Y - window.offset <= 1) {
+            window.div1.style.backgroundColor = "#227722";
         }
         else {
-            home.style.backgroundColor = "#cceecc";
+            window.home.style.backgroundColor = "#cceecc";
         }
     });
 
-    var comment = document.getElementById("comment");
-    var alert = document.getElementById("alert");
     comment.onfocus = function () {
         alert.style.color = "#ff3333";
         alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";
     };
     comment.onkeypress = function () {
         alert.style.color = "#ff3333";
-        alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";        
+        alert.innerText = "After writing comment, press enter to submit. Write as many and as much as you want!";
     }
     comment.onblur = function () {
         alert.innerText = "";
@@ -84,6 +86,7 @@ window.onload = function () {
             if (input) {
                 alert.style.color = "#33aa33";
                 alert.innerText = input + "\nSubmitted!";
+                $(comment).val("");
             }
             else {
                 alert.style.color = "#ff3333";
@@ -98,5 +101,7 @@ window.onresize = function () {
     window.div2Y = document.getElementById("div2").getBoundingClientRect().y;
     window.div3Y = document.getElementById("div3").getBoundingClientRect().y;
     window.commentsY = document.getElementById("comments").getBoundingClientRect().y;
-    window.socialY = document.getElementById("social").getBoundingClientRect().y;    
+    window.socialY = document.getElementById("social").getBoundingClientRect().y;
+
+    window.offset = $(document.getElementById("navbar")).offset().top;
 }
