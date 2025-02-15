@@ -1,9 +1,7 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
+"QCE":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1838864/all-proceedings
   color: "#009f36"
+
+"ASPLOS":
+  url: https://dl.acm.org/conference/asplos
+  color: "#00369f"

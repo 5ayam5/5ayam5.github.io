@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - 5ayam5
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - 5ayam5/Realtime-Scheduling-for-Continuous-Angle-QEC-Architectures
+  - 5ayam5/neovim-config
+  - 5ayam5/2100
