@@ -4,7 +4,7 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -17,48 +17,34 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-cv",
-          title: "cv",
+          title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-news",
-          title: "news",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/news/";
-          },
         },{id: "dropdown-repositories",
-              title: "repositories",
+              title: "Repositories",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "";
               },
             },{id: "dropdown-projects",
-              title: "projects",
+              title: "Projects",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "";
               },
             },{id: "dropdown-blog",
-              title: "blog",
+              title: "Blog",
               description: "",
               section: "Dropdown",
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "news-rescq-accepted-in-asplos-2025",
+            },{id: "news-rescq-accepted-in-asplos-2025",
           title: 'RESCQ accepted in ASPLOS 2025.',
           description: "",
           section: "News",},{
