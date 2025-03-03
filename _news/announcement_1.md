@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-01-27 19:49:00-0500
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+RESCQ accepted in ASPLOS 2025.
