@@ -5,7 +5,7 @@
     "image": "",
     "email": "sayams@utexas.edu",
     "url": "https://5ayam5.github.io",
-    "summary": "A PhD student at The University of Texas at Austin, broadly interested in the fields of quantum computing, computer architecture and Fault-Tolerant Quantum Computing (FTQC)",
+    "summary": "A PhD student at The University of Texas at Austin, broadly interested in the fields of quantum computing, computer architecture and Fault-Tolerant Quantum Computing (FTQC)"
   },
   "education": [
     {
@@ -15,7 +15,7 @@
       "area": "Electrical and Computer Engineering",
       "studyType": "PhD",
       "startDate": "2023-08",
-      "score": "3.95",
+      "score": "3.95"
     },
     {
       "institution": "Indian Institute of Technology, Delhi",
@@ -25,11 +25,9 @@
       "studyType": "B. Tech.",
       "startDate": "2019-07",
       "endDate": "2023-05",
-      "score": "9.55",
+      "score": "9.55"
     }
   ],
-  "work": [
-  ],
-  "publications": [
-  ],
+  "work": [],
+  "publications": []
 }
