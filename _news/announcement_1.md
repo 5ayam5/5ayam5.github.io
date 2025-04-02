@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-RESCQ accepted in ASPLOS 2025.
+[RESCQ](/publications/) accepted in ASPLOS 2025.
