@@ -47,6 +47,9 @@ ninja.data = [{
             },{id: "news-rescq-accepted-in-asplos-2025",
           title: 'RESCQ accepted in ASPLOS 2025.',
           description: "",
+          section: "News",},{id: "news-awarded-the-texas-quantum-institute-tqi-graduate-fellowship",
+          title: 'Awarded the Texas Quantum Institute (TQI) Graduate Fellowship.',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
