@@ -31,4 +31,4 @@ I am a PhD student in the [ECE Department](https://ece.utexas.edu) at The Univer
 
 I am interested in architectural design for realising Fault-Tolerant Quantum Computers (FTQC), with a specific focus on scheduling realtime operations, and minimizing program runtime. Apart from this, I am also interested in both logical and physical compilation of quantum algorithms to surface code and qLDPC architectures.
 
-Before this, I obtained my B. Tech. in Computer Science and Engineering from [IIT Delhi](https://home.iitd.ac.in), where I was working with [Dr. Preeti Ranjan Panda](https://www.cse.iitd.ac.in/~panda/) on 3D DRAM.
+Before this, I obtained my B. Tech. in Computer Science and Engineering from [IIT Delhi](https://homecse.iitd.ac.in/), where I was working with [Dr. Preeti Ranjan Panda](https://www.cse.iitd.ac.in/~panda/) on 3D DRAM.
