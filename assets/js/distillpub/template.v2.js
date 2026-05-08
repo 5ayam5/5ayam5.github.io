@@ -4660,6 +4660,10 @@ d-references {
   <h2>Table of contents</h2>
   <ul>`;
 
+    ToC += "</ul></nav>";
+    element.innerHTML = ToC;
+    const tocList = element.querySelector("ul");
+
     for (const el of headings) {
       // should element be included in TOC?
       const isInTitle = el.parentElement.tagName == "D-TITLE";
@@ -4669,17 +4673,21 @@ d-references {
       const title = el.textContent;
       const link = "#" + el.getAttribute("id");
 
-      let newLine = "<li>" + '<a href="' + link + '">' + title + "</a>" + "</li>";
-      if (el.tagName == "H3") {
-        newLine = "<ul>" + newLine + "</ul>";
-      } else {
-        newLine += "<br>";
-      }
-      ToC += newLine;
-    }
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.setAttribute("href", link);
+      a.textContent = title;
+      li.appendChild(a);
 
-    ToC += "</ul></nav>";
-    element.innerHTML = ToC;
+      if (el.tagName == "H3") {
+        const nested = document.createElement("ul");
+        nested.appendChild(li);
+        tocList.appendChild(nested);
+      } else {
+        tocList.appendChild(li);
+        tocList.appendChild(document.createElement("br"));
+      }
+    }
   }
 
   // Copyright 2018 The Distill Template Authors
