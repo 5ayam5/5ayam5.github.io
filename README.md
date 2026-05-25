@@ -209,15 +209,15 @@ Workshop on Structured Probabilistic Inference & Generative Modeling (ICML: <a h
 
 ### Desktop
 
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/desktop/alshedivat_github_io_al_folio_.html)
+[![Google Lighthouse PageSpeed Insights](lighthouse_results/desktop/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/5ayam5/5ayam5.github.io/blob/main/lighthouse_results/desktop/5ayam5_github_io_.html)
 
-Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=desktop)
+Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/analysis/url=https-5ayam5-github-io/kmf99b939l?form_factor=desktop)
 
 ### Mobile
 
-[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/alshedivat/al-folio/blob/main/lighthouse_results/mobile/alshedivat_github_io_al_folio_.html)
+[![Google Lighthouse PageSpeed Insights](lighthouse_results/mobile/pagespeed.svg)](https://htmlpreview.github.io/?https://github.com/5ayam5/5ayam5.github.io/blob/main/lighthouse_results/mobile/5ayam5_github_io_.html)
 
-Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/report?url=https%3A%2F%2Falshedivat.github.io%2Fal-folio%2F&form_factor=mobile)
+Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.web.dev/analysis/url=https-5ayam5-github-io/kmf99b939l?form_factor=mobile)
 
 ## Table Of Contents
 
