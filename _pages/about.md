@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Student, The University of Texas at Austin
+subtitle: PhD Candidate, The University of Texas at Austin
 
 profile:
   align: right
@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 3 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student in the [ECE Department](https://ece.utexas.edu) at The University of Texas at Austin, advised by [Dr. Jonathan Baker](https://www.ece.utexas.edu/people/faculty/jonathan-baker).
+I am a PhD candidate in the [ECE Department](https://ece.utexas.edu) at The University of Texas at Austin, advised by [Dr. Jonathan Baker](https://www.ece.utexas.edu/people/faculty/jonathan-baker).
 
 I am interested in architectural design for realising Fault-Tolerant Quantum Computers (FTQC), with a specific focus on scheduling realtime operations, and minimizing program runtime. Apart from this, I am also interested in both logical and physical compilation of quantum algorithms to surface code and qLDPC architectures.
 
