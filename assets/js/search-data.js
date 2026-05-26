@@ -53,6 +53,9 @@ ninja.data = [{
           section: "News",},{id: "news-awarded-the-texas-quantum-institute-tqi-graduate-fellowship",
           title: 'Awarded the Texas Quantum Institute (TQI) Graduate Fellowship.',
           description: "",
+          section: "News",},{id: "news-admitted-to-doctoral-candidacy",
+          title: 'Admitted to doctoral candidacy!',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
