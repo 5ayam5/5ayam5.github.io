@@ -5,3 +5,7 @@
 "ASPLOS":
   url: https://dl.acm.org/conference/asplos
   color: "#00369f"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"

@@ -1,8 +1,79 @@
+@misc{sethi2026optimizingparallelexecutioncommuting,
+  title={Optimizing Parallel Execution of Commuting Pauli Product Rotations},
+  author={Sayam Sethi and Devika Nambisan and Jonathan Mark Baker},
+  year={2026},
+  eprint={2605.23738},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2605.23738},
+}
+
+@misc{awasthi2026pricepayoffnondeterminismfault,
+  title={Price and Payoff: Non-Determinism in Fault Tolerant Quantum
+  Computation},
+  author={Aditi Awasthi and Sayam Sethi and Sahil Khan and Gokul
+  Subramanian Ravi and Jonathan Mark Baker},
+  year={2026},
+  eprint={2605.07983},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2605.07983},
+}
+
+@misc{sethi2026injeqtimprovedmagicstateinjection,
+  title={INJEQT: Improved Magic-State Injection Protocol for
+  Fault-Tolerant Quantum Extractor Architectures},
+  author={Sayam Sethi and Sahil Khan and Aditi Awasthi and Abhinav
+  Anand and Jonathan Mark Baker},
+  year={2026},
+  eprint={2604.25094},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2604.25094},
+}
+
+@misc{khan2026architectingearlyfaulttolerant,
+  title={Architecting Early Fault Tolerant Neutral Atoms Systems with
+  Quantum Advantage},
+  author={Sahil Khan and Sayam Sethi and Kaavya Sahay and Yingjia Lin
+    and Jude Alnas and Suhas Kurapati and Abhinav Anand and Jonathan M.
+  Baker and Kenneth R. Brown},
+  year={2026},
+  eprint={2604.19735},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2604.19735},
+}
+
+@misc{mazzetti2026logicalcompilationmultiqubiticeberg,
+  title={Logical Compilation for Multi-Qubit Iceberg Patches},
+  author={Cordell Mazzetti and Sayam Sethi and Rich Rines and Pranav
+  Gokhale and Jonathan Mark Baker},
+  year={2026},
+  eprint={2604.09956},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2604.09956},
+}
+
+@misc{sethi2026optimizinglogicalmappingsquantum,
+  title={Optimizing Logical Mappings for Quantum Low-Density Parity
+  Check Codes},
+  author={Sayam Sethi and Sahil Khan and Maxwell Poster and Abhinav
+  Anand and Jonathan Mark Baker},
+  year={2026},
+  eprint={2603.17167},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph},
+  url={https://arxiv.org/abs/2603.17167},
+}
+
 @inproceedings{10.1145/3676641.3716018,
   abbr = {ASPLOS},
   code = {https://doi.org/10.5281/zenodo.14769159},
   author = {Sethi, Sayam and Baker, Jonathan Mark},
-  title = {RESCQ: Realtime Scheduling for Continuous Angle Quantum Error Correction Architectures},
+  title = {RESCQ: Realtime Scheduling for Continuous Angle Quantum
+  Error Correction Architectures},
   year = {2025},
   isbn = {9798400710797},
   publisher = {Association for Computing Machinery},
@@ -10,46 +81,112 @@
   url = {https://doi.org/10.1145/3676641.3716018},
   doi = {10.1145/3676641.3716018},
   slides = {rescq.pptx},
-  abstract = {In order to realize large scale quantum error correction (QEC), resource states, such as |T〉, must be prepared which is expensive in both space and time. In order to circumvent this problem, alternatives have been proposed, such as the production of continuous angle rotation states [1, 6, 34]. However, the production of these states is non-deterministic and may require multiple repetitions to succeed. The original proposals suggest architectures which do not account for realtime (or dynamic) management of resources to minimize total execution time. Without a realtime scheduler, a statically generated schedule will be unnecessarily expensive. We propose RESCQ (pronounced rescue), a realtime scheduler for programs compiled onto these continuous angle systems. Our scheme actively minimizes total cycle count by on-demand redistribution of resources based on expected production rates. Depending on the underlying hardware, this can cause excessive classical control overhead. We further address this by dynamically selecting the frequency of our recomputation. RESCQ improves over baseline proposals by an average of 2x in cycle count.},
-  booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2},
+  abstract = {In order to realize large scale quantum error
+    correction (QEC), resource states, such as |T〉, must be prepared
+    which is expensive in both space and time. In order to circumvent
+    this problem, alternatives have been proposed, such as the
+    production of continuous angle rotation states [1, 6, 34]. However,
+    the production of these states is non-deterministic and may require
+    multiple repetitions to succeed. The original proposals suggest
+    architectures which do not account for realtime (or dynamic)
+    management of resources to minimize total execution time. Without a
+    realtime scheduler, a statically generated schedule will be
+    unnecessarily expensive. We propose RESCQ (pronounced rescue), a
+    realtime scheduler for programs compiled onto these continuous
+    angle systems. Our scheme actively minimizes total cycle count by
+    on-demand redistribution of resources based on expected production
+    rates. Depending on the underlying hardware, this can cause
+    excessive classical control overhead. We further address this by
+    dynamically selecting the frequency of our recomputation. RESCQ
+  improves over baseline proposals by an average of 2x in cycle count.},
+  booktitle = {Proceedings of the 30th ACM International Conference
+    on Architectural Support for Programming Languages and Operating
+  Systems, Volume 2},
   pages = {1028–1043},
   numpages = {16},
-  keywords = {quantum computing, quantum error correction, realtime scheduling, surface codes},
+  keywords = {quantum computing, quantum error correction, realtime
+  scheduling, surface codes},
   location = {Rotterdam, Netherlands},
   series = {ASPLOS '25}
 }
 
 @inproceedings{poster_cqm_2024,
   abbr = {QCE},
-	title = {{CQM}: {Cyclic} {Qubit} {Mappings}},
-	volume = {01},
-	shorttitle = {{CQM}},
-	url = {https://ieeexplore.ieee.org/abstract/document/10821347},
-	doi = {10.1109/QCE60285.2024.00125},
-	abstract = {Quantum computers show promise to solve select problems otherwise intractable on classical computers. How-ever, noisy intermediate-scale quantum (NISQ) era devices are currently prone to various sources of error. Quantum error correction (QEC) shows promise as a path towards fault tolerant quantum computing. Surface codes, in particular, have become ubiquitous throughout literature for their efficacy as a quantum error correcting code, and can execute quantum circuits via lattice surgery operations. Lattice surgery also allows for logical qubits to maneuver around the architecture, if there is space for it. Hardware used for near-term demonstrations have both spatially and temporally varying error results in logical qubits. By maneuvering logical qubits around the topology, an average logical error rate (LER) can be enforced. We propose cyclic qubit mappings (CQM), a dynamic remapping technique implemented during compilation to mitigate hardware heterogeneity by expanding and contracting logical qubits. In addition to LER averaging, CQM shows initial promise given it's minimal execution time overhead and effective resource utilization.},
-	urldate = {2025-02-15},
-	booktitle = {2024 {IEEE} {International} {Conference} on {Quantum} {Computing} and {Engineering} ({QCE})},
-	author = {Poster, Maxwell and Sethi, Sayam and Baker, Jonathan M.},
-	month = sep,
-	year = {2024},
-	keywords = {Compilation, Computers, Error analysis, Error correction codes, Hardware, Lattice Surgery, Lattices, QEC, Quantum Error Correction, Qubit, Resource management, Surface Code, Surgery, Topology, Uncertainty},
-	pages = {1058--1064},
+  title = {{CQM}: {Cyclic} {Qubit} {Mappings}},
+  volume = {01},
+  shorttitle = {{CQM}},
+  url = {https://ieeexplore.ieee.org/abstract/document/10821347},
+  doi = {10.1109/QCE60285.2024.00125},
+  abstract = {Quantum computers show promise to solve select problems
+    otherwise intractable on classical computers. How-ever, noisy
+    intermediate-scale quantum (NISQ) era devices are currently prone
+    to various sources of error. Quantum error correction (QEC) shows
+    promise as a path towards fault tolerant quantum computing. Surface
+    codes, in particular, have become ubiquitous throughout literature
+    for their efficacy as a quantum error correcting code, and can
+    execute quantum circuits via lattice surgery operations. Lattice
+    surgery also allows for logical qubits to maneuver around the
+    architecture, if there is space for it. Hardware used for near-term
+    demonstrations have both spatially and temporally varying error
+    results in logical qubits. By maneuvering logical qubits around the
+    topology, an average logical error rate (LER) can be enforced. We
+    propose cyclic qubit mappings (CQM), a dynamic remapping technique
+    implemented during compilation to mitigate hardware heterogeneity
+    by expanding and contracting logical qubits. In addition to LER
+    averaging, CQM shows initial promise given it's minimal execution
+  time overhead and effective resource utilization.},
+  urldate = {2025-02-15},
+  booktitle = {2024 {IEEE} {International} {Conference} on {Quantum}
+  {Computing} and {Engineering} ({QCE})},
+  author = {Poster, Maxwell and Sethi, Sayam and Baker, Jonathan M.},
+  month = sep,
+  year = {2024},
+  keywords = {Compilation, Computers, Error analysis, Error
+    correction codes, Hardware, Lattice Surgery, Lattices, QEC, Quantum
+    Error Correction, Qubit, Resource management, Surface Code,
+  Surgery, Topology, Uncertainty},
+  pages = {1058--1064},
 }
 
 @article{pandey_3d-tempo_2024,
-	title = {{3D}-{TemPo}: {Optimizing} 3-{D} {DRAM} {Performance} {Under} {Temperature} and {Power} {Constraints}},
-	volume = {43},
-	issn = {1937-4151},
-	shorttitle = {{3D}-{TemPo}},
-	url = {https://ieeexplore.ieee.org/abstract/document/10439997},
-	doi = {10.1109/TCAD.2024.3367235},
-	abstract = {3-D DRAM provides a significant performance boost resulting from substantial memory bandwidth. However, the stacked memory architecture exhibits high power density, causing thermal hotspots. Further, systems under power constraints require careful planning for intelligent allocation of the available power to their various components. A straightforward dynamic power management policy of allocating more power to potentially high memory activity 3-D DRAM ranks so as to maximize system performance causes a rise in the temperature of such ranks, making them susceptible to thermal stalls and shutdown by dynamic thermal management (DTM) strategies. A rise in rank temperature, in turn, increases the leakage power of memory ranks, affecting power budgeting decisions. Thus, a coordinated strategy for power budgeting and thermal management is needed. We propose an adjacency-aware dynamic power budgeting technique, 3D-TemPo, which dynamically performs a reward-based power allocation to memory ranks, in order to maximize 3-D DRAM performance under power and thermal constraints, and is sensitive to strong thermal correlations between vertically adjacent ranks. We evaluate 3D-TemPo using SPEC CPU2017 and PARSEC 2.1 benchmark suites and observe speedups of 1 times to 17.94 times compared to baseline strategies.},
-	number = {8},
-	urldate = {2025-02-15},
-	journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
-	author = {Pandey, Shailja and Sethi, Sayam and Panda, Preeti Ranjan},
-	month = aug,
-	year = {2024},
-	keywords = {3-D DRAM, Bandwidth, Dynamic scheduling, dynamic thermal management (DTM), Memory management, Random access memory, reward-based dynamic power budgeting (DPB), Thermal management, Thermal management of electronics, Three-dimensional displays},
-	pages = {2263--2276},
+  title = {{3D}-{TemPo}: {Optimizing} 3-{D} {DRAM} {Performance}
+  {Under} {Temperature} and {Power} {Constraints}},
+  volume = {43},
+  issn = {1937-4151},
+  shorttitle = {{3D}-{TemPo}},
+  url = {https://ieeexplore.ieee.org/abstract/document/10439997},
+  doi = {10.1109/TCAD.2024.3367235},
+  abstract = {3-D DRAM provides a significant performance boost
+    resulting from substantial memory bandwidth. However, the stacked
+    memory architecture exhibits high power density, causing thermal
+    hotspots. Further, systems under power constraints require careful
+    planning for intelligent allocation of the available power to their
+    various components. A straightforward dynamic power management
+    policy of allocating more power to potentially high memory activity
+    3-D DRAM ranks so as to maximize system performance causes a rise
+    in the temperature of such ranks, making them susceptible to
+    thermal stalls and shutdown by dynamic thermal management (DTM)
+    strategies. A rise in rank temperature, in turn, increases the
+    leakage power of memory ranks, affecting power budgeting decisions.
+    Thus, a coordinated strategy for power budgeting and thermal
+    management is needed. We propose an adjacency-aware dynamic power
+    budgeting technique, 3D-TemPo, which dynamically performs a
+    reward-based power allocation to memory ranks, in order to maximize
+    3-D DRAM performance under power and thermal constraints, and is
+    sensitive to strong thermal correlations between vertically
+    adjacent ranks. We evaluate 3D-TemPo using SPEC CPU2017 and PARSEC
+    2.1 benchmark suites and observe speedups of 1 times to 17.94 times
+  compared to baseline strategies.},
+  number = {8},
+  urldate = {2025-02-15},
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems},
+  author = {Pandey, Shailja and Sethi, Sayam and Panda, Preeti Ranjan},
+  month = aug,
+  year = {2024},
+  keywords = {3-D DRAM, Bandwidth, Dynamic scheduling, dynamic
+    thermal management (DTM), Memory management, Random access memory,
+    reward-based dynamic power budgeting (DPB), Thermal management,
+  Thermal management of electronics, Three-dimensional displays},
+  pages = {2263--2276},
 }
