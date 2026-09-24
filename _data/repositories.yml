@@ -4,6 +4,8 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - 5ayam5/INJEQT
   - 5ayam5/Realtime-Scheduling-for-Continuous-Angle-QEC-Architectures
+  - 5ayam5/dotfiles
   - 5ayam5/neovim-config
   - 5ayam5/2100
