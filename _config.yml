@@ -194,7 +194,6 @@ exclude:
   - _pages/teaching.md
   - purgecss.config.js
   - README.md
-  - readme_preview/
   - vendor
 keep_files:
   - CNAME
