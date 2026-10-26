@@ -42,6 +42,9 @@ ninja.data = [{
           section: "News",},{id: "news-admitted-to-doctoral-candidacy",
           title: 'Admitted to doctoral candidacy!',
           description: "",
+          section: "News",},{id: "news-injeqt-and-price-and-payoff-accepted-in-qce-2026",
+          title: 'INJEQT and Price and Payoff accepted in QCE 2026.',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
