@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[RESCQ](/publications/#sethi2025rescq) accepted in ASPLOS 2025.
+[RESCQ](/publications/#rescq) accepted in ASPLOS 2025.
