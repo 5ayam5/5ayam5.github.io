@@ -118,8 +118,6 @@ GEM
     jekyll-archives (2.3.0)
       jekyll (>= 3.6, < 5.0)
     jekyll-email-protect (1.1.0)
-    jekyll-feed (0.17.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-get-json (1.0.0)
       deep_merge (~> 1.2)
       jekyll (>= 3.0)
@@ -264,7 +262,6 @@ DEPENDENCIES
   jekyll
   jekyll-archives
   jekyll-email-protect
-  jekyll-feed
   jekyll-get-json
   jekyll-imagemagick
   jekyll-jupyter-notebook
