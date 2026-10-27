@@ -31,6 +31,19 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_stats_base_url: https://github-readme-stats-vert-six-14.vercel.app # github-readme-stats instance for repo and user cards (no trailing slash)
+repo_card_colors: # custom github-readme-stats colors (hex without #), override repo_theme_*; keep in sync with the theme palette in _sass/_variables.scss
+  light:
+    title: "35627a"
+    text: "1f2a30"
+    icon: "b46258"
+    bg: "ffffff"
+    border: "dcdcdc"
+  dark:
+    title: "e5aea9"
+    text: "e8ecef"
+    icon: "a6a9d0"
+    bg: "1d313b"
+    border: "2c4250"
 repo_trophies:
   enabled: true
   base_url: https://github-profile-trophy-neon-six.vercel.app # self-hosted fork: https://github.com/5ayam5/github-profile-trophy (no trailing slash)
