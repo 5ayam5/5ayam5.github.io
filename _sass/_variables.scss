@@ -32,10 +32,29 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+// Theme palette (swap these to try a different color scheme)
+// "Sapphire ash morning" from https://www.figma.com/resource-library/website-color-schemes/:
+// #35627a sapphire, #e5aea9 blush, #b46258 terracotta, #a6a9d0 periwinkle, #f5f5f5 ash, #8e9a98 sage grey
+$theme-accent-light: #35627a !default; // sapphire (light mode)
+$theme-bg-light: #f5f5f5 !default; // ash (light mode)
+$theme-card-light: #ffffff !default; // cards (light mode)
+$theme-text-light: #1f2a30 !default; // body text (light mode)
+$theme-muted-light: #5f6b69 !default; // secondary text, sage grey darkened for contrast (light mode)
+$theme-code-bg-light: rgba(#a6a9d0, 0.2) !default; // periwinkle tint for code (light mode)
+$theme-footer-bg-light: #35627a !default; // sapphire
+$theme-footer-text-light: #f5f5f5 !default;
+$theme-accent-dark: #e5aea9 !default; // blush (dark mode)
+$theme-bg-dark: #14232b !default; // sapphire, darkened (dark mode)
+$theme-card-dark: #1d313b !default; // cards and code blocks (dark mode)
+$theme-text-dark: #e8ecef !default; // body text (dark mode)
+$theme-muted-dark: #8e9a98 !default; // secondary text, sage grey (dark mode)
+$theme-divider-dark: #2c4250 !default;
+$theme-footer-bg-dark: #a6a9d0 !default; // periwinkle
+$theme-footer-text-dark: #14232b !default;
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
-$code-bg-color-dark: #2c3237 !default;
+$code-bg-color-light: $theme-code-bg-light;
+$code-bg-color-dark: $theme-card-dark !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";

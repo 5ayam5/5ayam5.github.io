@@ -24,12 +24,12 @@
     <img
       class="only-light w-100"
       alt="{{ include.username }}"
-      src="{{ stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_icons=true&include_all_commits=true&hide_rank=true"
+      src="{{ stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_light }}{% for c in site.repo_card_colors.light %}&{{ c[0] }}_color={{ c[1] }}{% endfor %}&locale={{ lang }}&show_icons=true&include_all_commits=true&hide_rank=true"
     >
     <img
       class="only-dark w-100"
       alt="{{ include.username }}"
-      src="{{ stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_icons=true&include_all_commits=true&hide_rank=true"
+      src="{{ stats_url }}/api/?username={{ include.username }}&theme={{ site.repo_theme_dark }}{% for c in site.repo_card_colors.dark %}&{{ c[0] }}_color={{ c[1] }}{% endfor %}&locale={{ lang }}&show_icons=true&include_all_commits=true&hide_rank=true"
     >
   </a>
 </div>
